@@ -1,6 +1,5 @@
 import java.util.List;
 import java.util.stream.Collectors;
-
 public class Ejercicio2 {
     public static void main(String[] args) {
         List<Integer> palabras = List.of(1, 2, 3, 4, 5);
@@ -10,7 +9,6 @@ public class Ejercicio2 {
                                             .collect(Collectors.toList());
         System.out.println(numerosPotenciados);
     }
-
     public static Integer calcularPotencia(Integer numero, Integer potencia) {
         if (potencia == 0){
             return 1;
