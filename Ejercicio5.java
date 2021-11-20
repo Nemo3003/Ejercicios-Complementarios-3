@@ -3,7 +3,6 @@ import java.time.Period;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
 public class Ejercicio5 {
     public static void main(String[] args) {
         List<Alumnos> alumnos = List.of(
@@ -20,7 +19,6 @@ public class Ejercicio5 {
                                 p -> Ejercicio5.getEdad(p.getBirthday())));
         System.out.println(alumnosConEdades);
     }
-
     public static Integer getEdad(LocalDate birthDate){
         return Period.between(birthDate, LocalDate.now()).getYears();
     }
