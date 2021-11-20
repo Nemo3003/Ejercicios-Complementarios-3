@@ -1,6 +1,5 @@
 import java.util.List;
 import java.util.stream.Collectors;
-
 public class Ejercicio4 {
     public static void main(String[] args) {
         List<Integer> palabras = List.of(1, 2, 4, 4, 4);
@@ -10,7 +9,6 @@ public class Ejercicio4 {
                 .collect(Collectors.toList());
         System.out.println(otraLista);
     }
-
     public static Integer factorial(Integer numero) {
         if (numero == 1){
             return 1;
@@ -18,5 +16,4 @@ public class Ejercicio4 {
             return numero * factorial(numero-1);
         }
     }
-
 }
